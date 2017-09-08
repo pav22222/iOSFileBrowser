@@ -86,14 +86,20 @@
         cell.textLabel.text = _files[indexPath.row - 1];
         NSString* itemPath = [_pwd stringByAppendingPathComponent:_files[indexPath.row - 1]];
         NSDictionary* attr = [[NSFileManager defaultManager]attributesOfItemAtPath:itemPath error:nil];
+        NSBundle *bundle = [NSBundle bundleForClass:self.classForCoder];
+        NSURL *bundleURL = [[bundle resourceURL] URLByAppendingPathComponent:@"iOSFileBrowser.bundle"];
         if ([attr objectForKey:NSFileType] == NSFileTypeDirectory) {
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-            cell.imageView.image = [UIImage imageNamed:@"folder"];
+            //cell.imageView.image = [UIImage imageNamed:@"folder"];
+            NSBundle *resourceBundle = [NSBundle bundleWithURL:bundleURL];
+            cell.imageView.image = [UIImage imageNamed:@"folder" inBundle:resourceBundle compatibleWithTraitCollection:nil];
             [_dirIndexes addObject:[NSNumber numberWithLong:indexPath.row]];
         }
         else {
             cell.accessoryType = UITableViewCellAccessoryNone;
-            cell.imageView.image = [UIImage imageNamed:@"file"];
+            //cell.imageView.image = [UIImage imageNamed:@"file"];
+            NSBundle *resourceBundle = [NSBundle bundleWithURL:bundleURL];
+            cell.imageView.image = [UIImage imageNamed:@"file" inBundle:resourceBundle compatibleWithTraitCollection:nil];
         }
     }
     return cell;
