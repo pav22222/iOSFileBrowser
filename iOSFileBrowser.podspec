@@ -25,10 +25,11 @@ A Simple File Browser for iOS devices.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Pavel Krasnov' => 'pkrasnov412@gmail.com' }
-  s.source           = { :git => 'https://github.com/pav22222/iOSFileBrowser.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/pav22222/iOSFileBrowser.git', :tag => s.version }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.requires_arc = true
 
   s.source_files = 'iOSFileBrowser/Classes/*'
   s.resources = 'iOSFileBrowser/Assets/*.png'
