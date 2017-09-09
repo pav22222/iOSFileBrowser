@@ -1,4 +1,9 @@
 # iOSFileBrowser
+
+[![Version](https://img.shields.io/cocoapods/v/iOSFileBrowser.svg?style=flat)](http://cocoapods.org/pods/iOSFileBrowser)
+[![Platform](https://img.shields.io/cocoapods/p/iOSFileBrowser.svg?style=flat)](http://cocoapods.org/pods/iOSFileBrowser)
+[![License](https://img.shields.io/cocoapods/l/iOSFileBrowser.svg?style=flat)](http://cocoapods.org/pods/iOSFileBrowser)
+
 This is a simple file browser for iOS. It allows you to go through standard places in the iOS file system. It does not contain anything superfluous, but easily scales for any specific purposes.
 
 <img src = "https://github.com/pav22222/iOSFileBrowser/blob/master/screenshots/Screenshot1.png" width = "375" height = "667" alt = "Screenshot1.png"/>
