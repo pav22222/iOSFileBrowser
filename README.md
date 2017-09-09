@@ -1,14 +1,12 @@
 # iOSFileBrowser
 This is a simple file browser for iOS. It allows you to go through standard places in the iOS file system. It does not contain anything superfluous, but easily scales for any specific purposes.
 
-![screenshot1](https://github.com/pav22222/iOSFileBrowser/blob/master/screenshots/Screenshot1.png =375x667)
-![screenshot2](https://github.com/pav22222/iOSFileBrowser/blob/master/screenshots/Screenshot2.png =375x667)
-![screenshot3](https://github.com/pav22222/iOSFileBrowser/blob/master/screenshots/Screenshot3.png =375x667)
+<img src = "https://github.com/pav22222/iOSFileBrowser/blob/master/screenshots/Screenshot1.png" width = "375" height = "667" alt = "Screenshot1.png"/>
+<img src = "https://github.com/pav22222/iOSFileBrowser/blob/master/screenshots/Screenshot2.png" width = "375" height = "667" alt = "Screenshot2.png"/>
+<img src = "https://github.com/pav22222/iOSFileBrowser/blob/master/screenshots/Screenshot3.png" width = "375" height = "667" alt = "Screenshot3.png"/>
 
-
-##Installation
-
-###CocoaPods:
+## Installation
+### CocoaPods:
 
 Add the next string in your project's Podfile:
 
@@ -24,11 +22,11 @@ pod install
 
 and add iOSFileBrowser.framework in your project settings in section "Linked Frameworks and Libraries"
 
-###Manually:
+### Manually:
 
 Add files iOSFileBrowser.h and iOSFileBrowser.m from "iOSFileBrowser/Classes" directory and icons *.png from "iOSFileBrowser/Assets" directory to your project.
 
-##Usage
+## Usage
 
 Objective C:
 ```objective-c
@@ -42,6 +40,6 @@ UINavigationController* nav = [[UINavigationController alloc]initWithRootViewCon
 [self presentViewController:nav animated:NO completion:nil];
 ```
 
-##License
+## License
 
 MIT
